@@ -56,7 +56,7 @@ async function run() {
 
 
 
-        
+
         app.post('/products', async (req, res) => {
             const product = req.body;
             console.log(product)
@@ -131,7 +131,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send("server site on and process  ")
+    res.send("server site on and process and started ")
 })
 app.listen(port, () => {
     console.log(`server site is runing ${port}`);
