@@ -75,10 +75,10 @@ async function run() {
 
         app.get("/products/:id", async (req, res) => {
             const id = req.params.id;
-            const query = {
+            const quaery = {
                 _id: new ObjectId(id),
             };
-            const result = await productCollection.findOne(query)
+            const result = await productCollection.findOne(quaery)
             res.send(result)
         })
 
@@ -131,8 +131,8 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send("server site on and process and started ")
+    res.send("server site on and process and started for client site  ")
 })
 app.listen(port, () => {
-    console.log(`server site is runing ${port}`);
+    console.log(`server site is runing and  ${port}`);
 })
